@@ -10,4 +10,8 @@ let result = number(12, 12);
 //no parameter
 let pie = () => 3.1416;
 let value = pie();
-console.log(value);
+//console.log(value);
+//one parameter in arrow function
+let doubleIt = (num1) => num1  + 12;
+let resultIt = doubleIt(12);
+console.log(resultIt);
