@@ -26,4 +26,13 @@ let exactResult = doMath(12,15,16);
 //console.log(exactResult);
 //using Math.max(find max value)
 let numbers = Math.max(12,15,76,34);
-console.log(numbers);
+//console.log(numbers);
+
+//-------spread-operator(use ...)
+let largest = [12, 15, 17, 29];
+let largestValue = Math.max(...largest);
+console.log(largestValue);
+
+console.log(...largest);
+
+
