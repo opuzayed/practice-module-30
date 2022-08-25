@@ -56,18 +56,24 @@ let {name, address, color} = fish;
 
 //-------------array destructuring-------------
 let [first, second, third] = [12, 13, 15, 16];
-console.log(first,second,third);
+//console.log(first,second,third);
 
 //------------array-string-destructurig-------------
 let nayoks = ['opu','tipu','rony'];
 let [firsts, seconds, thirds]= nayoks;
-console.log(firsts);
+//console.log(firsts);
 //---------function-destruturing----------
 function getNames()
 {
   return ['halim','dalim'];
 }
-let [chacha,uncle] = getNames();
-console.log(uncle, chacha);
-
+const numberss=[10,20,30,40,50,60,70 ];
+const bigNumber = Math.max(...numberss);
+//console.log(bigNumber);
+// milestone -6-module-30-practice-problem
+/*Write an arrow function that will take 3 parameters, will multiply
+the parameters and will return the result. */
+let multifly = (a,b,c) => a*b*c
+let results = multifly(2,2,2);
+console.log(results);
 
