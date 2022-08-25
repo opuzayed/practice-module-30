@@ -62,5 +62,11 @@ console.log(first,second,third);
 let nayoks = ['opu','tipu','rony'];
 let [firsts, seconds, thirds]= nayoks;
 console.log(firsts);
+//---------function-destruturing----------
+function getNames()
+{
+  return ['halim','dalim'];
+}
+let [chacha,uncle] = getNames();
 
 
