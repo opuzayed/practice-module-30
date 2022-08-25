@@ -42,13 +42,16 @@ let largest2 = [23, 45, 45, ...largest, 23, 34];
 //console.log(largest1);
 //console.log(largest2);
 
-//-----object------
+//-----object(destructuring)------
 let fish = {
   name : 'hilsha',
   address : 'chandpur',
   color : 'silver',
   phone : '01681310294'
 };
-console.log(fish.phone);
+//object property name and variable name same than access object property value.called destructuring.
+//left side use {variable name} = object
+let {name, address, color} = fish;
+console.log(name, address, color);
 
 
