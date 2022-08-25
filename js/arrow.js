@@ -75,5 +75,13 @@ const bigNumber = Math.max(...numberss);
 the parameters and will return the result. */
 let multifly = (a,b,c) => a*b*c
 let results = multifly(2,2,2);
-console.log(results);
+//console.log(results);
+
+//---multiline-use-backtick(`)
+let rsult = `i am web developer.
+i love to code.
+i love to eat biriyani.
+`
+console.log(rsult);
+
 
