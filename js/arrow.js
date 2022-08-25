@@ -82,6 +82,9 @@ let rsult = `i am web developer.
 i love to code.
 i love to eat biriyani.
 `
-console.log(rsult);
-
+//console.log(rsult);
+//------------arrowfunction using default parameter
+let adds = (a, b=0) => a + b;
+let rasult = adds(3);
+console.log(rasult);
 
