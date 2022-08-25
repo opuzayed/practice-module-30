@@ -52,6 +52,10 @@ let fish = {
 //object property name and variable name same than access object property value.called destructuring.
 //left side use {variable name} = object
 let {name, address, color} = fish;
-console.log(name, address, color);
+//console.log(name, address, color);
+
+//-------------array destructuring-------------
+let [first, second, third] = [12, 13, 15, 16];
+console.log(first,second,third);
 
 
