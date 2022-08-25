@@ -58,4 +58,9 @@ let {name, address, color} = fish;
 let [first, second, third] = [12, 13, 15, 16];
 console.log(first,second,third);
 
+//------------array-string-destructurig-------------
+let nayoks = ['opu','tipu','rony'];
+let [firsts, seconds, thirds]= nayoks;
+console.log(firsts);
+
 
