@@ -38,6 +38,17 @@ let largest1 = [...largest];
 largest.push(341);
 largest1.push(231);
 let largest2 = [23, 45, 45, ...largest, 23, 34];
-console.log(largest);
-console.log(largest1);
-console.log(largest2);
+//console.log(largest);
+//console.log(largest1);
+//console.log(largest2);
+
+//-----object------
+let fish = {
+  name : 'hilsha',
+  address : 'chandpur',
+  color : 'silver',
+  phone : '01681310294'
+};
+console.log(fish.phone);
+
+
