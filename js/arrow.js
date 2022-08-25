@@ -68,5 +68,6 @@ function getNames()
   return ['halim','dalim'];
 }
 let [chacha,uncle] = getNames();
+console.log(uncle, chacha);
 
 
