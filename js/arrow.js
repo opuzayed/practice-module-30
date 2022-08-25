@@ -14,4 +14,16 @@ let value = pie();
 //one parameter in arrow function
 let doubleIt = (num1) => num1  + 12;
 let resultIt = doubleIt(12);
-console.log(resultIt);
+//console.log(resultIt);
+//arrow function with multiline
+let doMath = (a, b, c) => {
+    let firstSum = a +b;
+    let secondMultiply = b *c;
+    let thirdResult = secondMultiply / 2;
+    return thirdResult;
+};
+let exactResult = doMath(12,15,16);
+//console.log(exactResult);
+//using Math.max(find max value)
+let numbers = Math.max(12,15,76,34);
+console.log(numbers);
