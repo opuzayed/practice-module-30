@@ -228,6 +228,14 @@ console.log(takeBig);
 let filtNumber = [10,30,45,56,67];
 let evenNumber = filtNumber.filter(enumber =>enumber % 2 == 0);
 console.log(evenNumber);
-
+//-------------use filter take condition match product from array------
+let pro = [
+  {id : 1, name : 'laptop', price : 12780},
+  {id : 2, name : 'mobiles', price : 33400},
+  {id : 3, name : 'radio', price : 14000},
+  {id : 4, name : 'Walton', price : 16000}
+];
+let matchProd = pro.filter(prod => prod.price > 20000);
+console.log(matchProd);
 
 
