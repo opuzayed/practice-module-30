@@ -255,7 +255,7 @@ let student = {
   age  : 23,
   class : 'ten',
   marks :{
-    bangla : 49,
+    bangla : 490,
     math : 56,
     english : 20
   },
@@ -266,6 +266,10 @@ console.log(singleMark);
 //use---[]-----for specific value----------
 let english = student ['marks']['english'];
 console.log(english);
+//property name assign a variable
+let subjectName = 'bangla';
+let subjectMark = student.marks[subjectName];
+console.log(subjectMark);
 
 
 
