@@ -208,7 +208,16 @@ let products = [
 ];
 let items = products.map(product => product.name);
 console.log(items);
-
+//-------use foreach(no return-thats why no variable)------------
+let balikas = ['opu','tipus', 'rony','sazzed'];
+balikas.forEach(balika => console.log(balika));
+let prods = [
+  {id : 1, name : 'laptop', price : 12780},
+  {id : 2, name : 'mobiles', price : 33400},
+  {id : 3, name : 'radio', price : 14000},
+  {id : 4, name : 'Walton', price : 16000}
+];
+prods.forEach(prod => console.log(prod));
 
 
 
