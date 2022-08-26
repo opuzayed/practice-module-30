@@ -195,10 +195,20 @@ console.log(divideByTwo);
 let boys = ['opu','tipu', 'rony','sazzed'];
 let firstLetter = boys.map(boy => boy[0]);
 console.log(firstLetter);
-//---------------array length using map--------
+//---------------array length using map----------------
 let baloks = ['opu','tipu', 'rony','sazzed'];
 let boyLength = baloks.map(balok => balok.length);
 console.log(boyLength);
+//find specific name from product list
+let products = [
+  {id : 1, name : 'laptop', price : 12780},
+  {id : 2, name : 'mobile', price : 33400},
+  {id : 3, name : 'radio', price : 14000},
+  {id : 4, name : 'Walton', price : 16000}
+];
+let items = products.map(product => product.name);
+console.log(items);
+
 
 
 
