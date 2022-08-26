@@ -191,7 +191,10 @@ console.log(fiveTimes);
 let arraNumbers = [2,4,6,7];
 let divideByTwo = arraNumbers.map(n => n /2);
 console.log(divideByTwo);
-
+//----------use map and get first character in array element--------
+let boys = ['opu','tipu', 'rony','sazzed'];
+let firstLetter = boys.map(boy => boy[0]);
+console.log(firstLetter);
  
 
 
