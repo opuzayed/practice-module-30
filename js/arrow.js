@@ -95,12 +95,12 @@ b) Check if the length of each element is even, push elements
 with even length to a new array and return the result 
 */
 
- let friendsName = ['tipu','faijul','molla','sazzed'];
+ /* let friendsName = ['tipu','faijul','molla','sazzed'];
 let friends = friend => {
   let evenFriend = []; 
 for(let i=0; i < friend.length; i++)
 {
-  let takeFriend = friend[i];
+  let takeFriend =friend[i];
   //console.log(takeFriend);
 
   if(takeFriend.length % 2 != 0){
@@ -110,7 +110,7 @@ for(let i=0; i < friend.length; i++)
 return evenFriend;
 }; 
   let arrayresult = friends(friendsName);
-  console.log(arrayresult);
+  console.log(arrayresult); */
  
 
 /*Write an arrow function where it will do the following:
@@ -147,6 +147,10 @@ let takeArray = (arr1, arr2) => {
 }
 let allresult = takeArray(array1,array2);
 console.log(allresult); */
+
+//-----------milestone-6-module-31- start------------
+let users = [{name : 'abul', id : 1, job : 'developer'}];
+console.log(users[0].id);
 
  
 
