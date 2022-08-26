@@ -103,7 +103,7 @@ for(let i=0; i < friend.length; i++)
   let takeFriend = friend[i];
   //console.log(takeFriend);
 
-  if(takeFriend.length % 2 == 0){
+  if(takeFriend.length % 2 != 0){
     evenFriend.push(takeFriend);
   }
 }
