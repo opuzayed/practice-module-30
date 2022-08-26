@@ -163,15 +163,27 @@ let data = {
 //console.log(data . data[1].name);
 
 //?-optional-chaining(kono value te data na thakle ? use korle shta r samne jabe na)
-
 let arNumbers = [2,3,4,5];
+function arrNumbers (numbers)
+{
 let newNumbers = [];
 for(let number of arNumbers)
 {
-  let Numbers = number * 2;
+  let Numbers = doublesIt(number);
   newNumbers.push(Numbers);
 }
-console.log(newNumbers);
+return newNumbers;
+}
+let doublesIt = num => num * 2;
+let makeDouble = arNumbers.map(doublesIt);
+let multiNumbers = arrNumbers(arNumbers);
+//console.log(multiNumbers);
+console.log(makeDouble);
+
+/* function multiflyByTwo(number)
+{
+  return number * 2;
+} */
 
  
 
