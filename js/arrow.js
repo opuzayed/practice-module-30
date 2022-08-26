@@ -263,5 +263,9 @@ let student = {
 let singleMark = student.marks.math;
 console.log(singleMark);
 
+//use---[]-----for specific value----------
+let english = student ['marks']['english'];
+console.log(english);
+
 
 
