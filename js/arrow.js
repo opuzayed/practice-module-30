@@ -162,6 +162,8 @@ let data = {
 };
 console.log(data . data[1].name);
 
+//?-optional-chaining(kono value te data na thakle ? use korle shta r samne jabe na)
+
  
 
 
