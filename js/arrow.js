@@ -272,7 +272,7 @@ let subjectMark = student.marks[subjectName];
 console.log(subjectMark);
 
 //--------------class--------------
-class Instructor{
+/* class Instructor{
   name;
   address;
   //name set korar jonno constructor dite hoi-eta keyword
@@ -299,7 +299,105 @@ console.log(opu);
 opu.startSupportSession('4 pm');
 opu.creatQuiz(30);
 const dipu = new Instructor('dipu','lakshmipur');
-console.log(dipu);
+console.log(dipu); */
+
+//------------class---------
+//---------------------COMMON CLASS-----------
+//parent
+class TeamMember{
+  name;
+  address;
+  constructor(name, address)
+  {
+    this.name = name;
+    this.address = address;
+  }
+  provideFeedback()
+  {
+    console.log(`${this.name} thank you for your feedback`);
+  }
+}
+//(extends) use korle common class er property gula access pabe but name pabe na
+class Instructor extends TeamMember{
+  
+  //name set korar jonno constructor dite hoi-eta keyword
+  
+  constructor(name, address)
+  {
+    super(name, address) //parent er constructor k call krte super dite hoi
+  }
+  designation = 'web course instructor';
+  team = 'web team';
+  //method
+  startSupportSession(time)
+  {
+    console.log(`start support session at ${time}`);
+  }
+  //method
+  creatQuiz(module)
+  {
+    console.log(`please create quiz for module ${module}`);
+  }
+  provideFeedback()
+  {
+    console.log(`${this.name} thank you for your feedback`);
+  }
+}
+
+
+class Developer extends TeamMember{
+  
+  tech;
+  //name set korar jonno constructor dite hoi-eta keyword
+  constructor(name, address, tech)
+  {
+    super(name, address);
+    this.tech = tech;
+  }
+  designation = 'web course instructor';
+  team = 'web team';
+  //method
+  developFeature(feature)
+  {
+    console.log(`please develop ${feature}`);
+  }
+  //method
+  release(version)
+  {
+    console.log(`please create quiz for module ${version}`);
+  }
+  
+}
+const alia = new Developer('alia','india','react');
+alia.provideFeedback();
+console.log(alia);
+
+class Jobplacement extends TeamMember{
+  designation = 'job placement commanos';
+  team = 'job placement';
+  region;
+  //name set korar jonno constructor dite hoi-eta keyword
+  constructor(name, address, region)
+  {
+    super(name, address);
+    this.region = region;
+  }
+  
+  //method
+  provideResume(feature)
+  {
+    console.log(`please develop ${feature}`);
+  }
+  //method
+  prepareStudent(version)
+  {
+    console.log(`please create quiz for module ${version}`);
+  }
+ 
+}
+const popy = new Jobplacement('popy', 'dhaka', 'australlia');
+popy.provideFeedback();
+console.log(popy);
 
 
 
