@@ -238,4 +238,9 @@ let pro = [
 let matchProd = pro.filter(prod => prod.price > 20000);
 console.log(matchProd);
 
+//-------------use (find) return only matching first value----------
+let findNumbers = [12,16,15,20,34,25];
+let findNum = findNumbers.find(num => num % 5 == 0);
+console.log(findNum);
+//output : 15.
 
