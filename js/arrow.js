@@ -160,9 +160,18 @@ let data = {
   ],
 
 };
-console.log(data . data[1].name);
+//console.log(data . data[1].name);
 
 //?-optional-chaining(kono value te data na thakle ? use korle shta r samne jabe na)
+
+let arNumbers = [2,3,4,5];
+let newNumbers = [];
+for(let number of arNumbers)
+{
+  let Numbers = number * 2;
+  newNumbers.push(Numbers);
+}
+console.log(newNumbers);
 
  
 
