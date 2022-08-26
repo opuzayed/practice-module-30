@@ -151,6 +151,16 @@ console.log(allresult); */
 //-----------milestone-6-module-31- start------------
 let users = [{name : 'abul', id : 1, job : 'developer'}];
 console.log(users[0].id);
+//another----
+let data = {
+  count : 300,
+  data : [
+    {id : 1, name : 'mofiz', job : 'programmer'},
+    {id : 2, name : 'opu', job : 'developer'}
+  ],
+
+};
+console.log(data . data[1].name);
 
  
 
