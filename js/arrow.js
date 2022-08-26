@@ -178,12 +178,15 @@ let doublesIt = num => num * 2;
 let makeDouble = arNumbers.map(doublesIt);
 let multiNumbers = arrNumbers(arNumbers);
 //console.log(multiNumbers);
-console.log(makeDouble);
+//console.log(makeDouble);
 
 /* function multiflyByTwo(number)
 {
   return number * 2;
 } */
+//--------------------map use in array----------------
+let fiveTimes = [2, 4, 6, 8].map(x => x * 5);
+console.log(fiveTimes);
 
  
 
