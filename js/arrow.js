@@ -271,5 +271,35 @@ let subjectName = 'bangla';
 let subjectMark = student.marks[subjectName];
 console.log(subjectMark);
 
+//--------------class--------------
+class Instructor{
+  name;
+  address;
+  //name set korar jonno constructor dite hoi-eta keyword
+  constructor(name, address)
+  {
+    this.name = name;
+    this.address = address;
+  }
+  designation = 'web course instructor';
+  team = 'web team';
+  //method
+  startSupportSession(time)
+  {
+    console.log(`start support session at ${time}`);
+  }
+  //method
+  creatQuiz(module)
+  {
+    console.log(`please create quiz for module ${module}`);
+  }
+}
+let opu = new Instructor('opu','uttara');
+console.log(opu);
+opu.startSupportSession('4 pm');
+opu.creatQuiz(30);
+const dipu = new Instructor('dipu','lakshmipur');
+console.log(dipu);
+
 
 
