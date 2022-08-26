@@ -248,3 +248,20 @@ console.log(findNum);
 let reduNumber = [1,2,3,4,5];
 let total = reduNumber.reduce((previous, current) => previous + current, 0);
 console.log(total);
+
+//--------------use .notation see specific value-------------------
+let student = {
+  name : 'opu',
+  age  : 23,
+  class : 'ten',
+  marks :{
+    bangla : 49,
+    math : 56,
+    english : 20
+  },
+}; 
+let singleMark = student.marks.math;
+console.log(singleMark);
+
+
+
