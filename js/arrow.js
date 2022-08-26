@@ -224,5 +224,10 @@ let filterNumbs = [10,20,30,40];
 let takeBig = filterNumbs.filter(num => num >20);
 console.log(takeBig);
 
+//-------------use filter take even number from array----------
+let filtNumber = [10,30,45,56,67];
+let evenNumber = filtNumber.filter(enumber =>enumber % 2 == 0);
+console.log(evenNumber);
+
 
 
