@@ -187,6 +187,10 @@ let multiNumbers = arrNumbers(arNumbers);
 //--------------------map use in array----------------
 let fiveTimes = [2, 4, 6, 8].map(x => x * 5);
 console.log(fiveTimes);
+//use map array element divide by 2 then result
+let arraNumbers = [2,4,6,7];
+let divideByTwo = arraNumbers.map(n => n /2);
+console.log(divideByTwo);
 
  
 
