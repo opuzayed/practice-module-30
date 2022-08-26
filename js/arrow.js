@@ -87,42 +87,39 @@ i love to eat biriyani.
 let adds = (a, b=0) => a + b;
 let rasult = adds(3);
 //console.log(rasult);
-//Write an arrow function where it will do the following:
-/* 
+/* Write an arrow function where it will do the following:
+ 
 a) It will take an array where the array elements will be the
 name of your friends
 b) Check if the length of each element is even, push elements
 with even length to a new array and return the result 
 */
-/*  let friendsName = ['tipu','rony','sazzed','jonyd'];
-let friends =(friend) => {
-  let newFriend = []; */
-/* if(friend.length % 2 == 0){
-  let newFriend = [...friend];
-  return newFriend;
-}
-else{
-  console.log('array length is odd');
-}*/
-/* for(let i=0; i<friend.length; i++)
+
+ let friendsName = ['tipu','faijul','molla','sazzed'];
+let friends = friend => {
+  let evenFriend = []; 
+for(let i=0; i < friend.length; i++)
 {
   let takeFriend = friend[i];
-  if(takeFriend.length % 2 == 0){
-    let eachFriend = friend[i];
-  }
-  newFriend.push(eachFriend);
-  return newFriend;
-}
-};  */
-  //let arrayresult = friends(friendsName);
-  //console.log(arrayresult);
+  //console.log(takeFriend);
 
-  //Write an arrow function where it will do the following:
-/* a) Square each array element
+  if(takeFriend.length % 2 == 0){
+    evenFriend.push(takeFriend);
+  }
+}
+return evenFriend;
+}; 
+  let arrayresult = friends(friendsName);
+  console.log(arrayresult);
+ 
+
+/*Write an arrow function where it will do the following:
+a) Square each array element
 b) Calculate the sum of the squared elements
 c) Return the average of the sum of the squared elements */
-/* let arrnumbers = [2,2,2,2];
-let arroNumbers = arrnum => {
+
+/* let arrNumbers = [2,2,2,2];
+let arrowNumbers = arrnum => {
   let sum=0;
   for(let i=0;i<arrnum.length;i++)
   {
@@ -133,14 +130,15 @@ let arroNumbers = arrnum => {
   let average = sum/4;
   return average;
 }
-let totalAverage = arroNumbers(arrnumbers);
-console.log(totalAverage); */
+let totalAverage = arrowNumbers(arrNumbers);
+console.log(totalAverage);  */
+
 //Write an arrow function where it will do the following:
 /* a) It will take two array inputs
 b) Combine the two arrays and assign them in a new array
 c) Find the maximum number from the new array and return the
 result */
-let array1 = [1,2,3,4];
+/* let array1 = [1,2,3,4];
 let array2 = [5,6,7,8];
 let takeArray = (arr1, arr2) => {
   let newArray = [...arr1, ...arr2];
@@ -148,7 +146,8 @@ let takeArray = (arr1, arr2) => {
   return arrMax;
 }
 let allresult = takeArray(array1,array2);
-console.log(allresult);
+console.log(allresult); */
+
  
 
 
