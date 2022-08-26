@@ -219,5 +219,10 @@ let prods = [
 ];
 prods.forEach(prod => console.log(prod));
 
+//--------------------------use filter for condition--------
+let filterNumbs = [10,20,30,40];
+let takeBig = filterNumbs.filter(num => num >20);
+console.log(takeBig);
+
 
 
