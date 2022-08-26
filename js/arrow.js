@@ -195,6 +195,10 @@ console.log(divideByTwo);
 let boys = ['opu','tipu', 'rony','sazzed'];
 let firstLetter = boys.map(boy => boy[0]);
 console.log(firstLetter);
- 
+//---------------array length using map--------
+let baloks = ['opu','tipu', 'rony','sazzed'];
+let boyLength = baloks.map(balok => balok.length);
+console.log(boyLength);
+
 
 
