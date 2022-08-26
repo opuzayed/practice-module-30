@@ -244,3 +244,7 @@ let findNum = findNumbers.find(num => num % 5 == 0);
 console.log(findNum);
 //output : 15.
 
+//-----------------use (reduce) structure:(accumulator function, initial value) again accumulator function has two parameter----------------
+let reduNumber = [1,2,3,4,5];
+let total = reduNumber.reduce((previous, current) => previous + current, 0);
+console.log(total);
