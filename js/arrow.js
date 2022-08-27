@@ -403,6 +403,17 @@ console.log(popy);
 let user = {id : 1, name : 'opu', class : 'hons', age : 23 };
 let stringified = JSON.stringify(user);
 console.log(stringified);
+//-------------STRUCTURE 0F (FETCH)--------------
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+//--------------fetch-using- function------------
+function loadData()
+{
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(res => res.json())
+  .then(data => console.log(data))
+}
 
 
 
