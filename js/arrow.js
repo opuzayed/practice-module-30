@@ -44,14 +44,14 @@ let largest2 = [23, 45, 45, ...largest, 23, 34];
 
 //-----object(destructuring)------
 let fish = {
-  name : 'hilsha',
-  address : 'chandpur',
-  color : 'silver',
-  phone : '01681310294'
+  name: "hilsha",
+  address: "chandpur",
+  color: "silver",
+  phone: "01681310294",
 };
 //object property name and variable name same than access object property value.called destructuring.
 //left side use {variable name} = object
-let {name, address, color} = fish;
+let { name, address, color } = fish;
 //console.log(name, address, color);
 
 //-------------array destructuring-------------
@@ -59,32 +59,31 @@ let [first, second, third] = [12, 13, 15, 16];
 //console.log(first,second,third);
 
 //------------array-string-destructurig-------------
-let nayoks = ['opu','tipu','rony'];
-let [firsts, seconds, thirds]= nayoks;
+let nayoks = ["opu", "tipu", "rony"];
+let [firsts, seconds, thirds] = nayoks;
 //console.log(firsts);
 //---------function-destruturing----------
-function getNames()
-{
-  return ['halim','dalim'];
+function getNames() {
+  return ["halim", "dalim"];
 }
-const numberss=[10,20,30,40,50,60,70 ];
+const numberss = [10, 20, 30, 40, 50, 60, 70];
 const bigNumber = Math.max(...numberss);
 //console.log(bigNumber);
 // milestone -6-module-30-practice-problem
 /*Write an arrow function that will take 3 parameters, will multiply
 the parameters and will return the result. */
-let multifly = (a,b,c) => a*b*c
-let results = multifly(2,2,2);
+let multifly = (a, b, c) => a * b * c;
+let results = multifly(2, 2, 2);
 //console.log(results);
 
 //---multiline-use-backtick(`)
 let rsult = `i am web developer.
 i love to code.
 i love to eat biriyani.
-`
+`;
 //console.log(rsult);
 //------------arrowfunction using default parameter
-let adds = (a, b=0) => a + b;
+let adds = (a, b = 0) => a + b;
 let rasult = adds(3);
 //console.log(rasult);
 /* Write an arrow function where it will do the following:
@@ -95,7 +94,7 @@ b) Check if the length of each element is even, push elements
 with even length to a new array and return the result 
 */
 
- /* let friendsName = ['tipu','faijul','molla','sazzed'];
+/* let friendsName = ['tipu','faijul','molla','sazzed'];
 let friends = friend => {
   let evenFriend = []; 
 for(let i=0; i < friend.length; i++)
@@ -111,7 +110,6 @@ return evenFriend;
 }; 
   let arrayresult = friends(friendsName);
   console.log(arrayresult); */
- 
 
 /*Write an arrow function where it will do the following:
 a) Square each array element
@@ -149,32 +147,29 @@ let allresult = takeArray(array1,array2);
 console.log(allresult); */
 
 //-----------milestone-6-module-31- start------------
-let users = [{name : 'abul', id : 1, job : 'developer'}];
+let users = [{ name: "abul", id: 1, job: "developer" }];
 console.log(users[0].id);
 //another----
 let data = {
-  count : 300,
-  data : [
-    {id : 1, name : 'mofiz', job : 'programmer'},
-    {id : 2, name : 'opu', job : 'developer'}
+  count: 300,
+  data: [
+    { id: 1, name: "mofiz", job: "programmer" },
+    { id: 2, name: "opu", job: "developer" },
   ],
-
 };
 //console.log(data . data[1].name);
 
 //?-optional-chaining(kono value te data na thakle ? use korle shta r samne jabe na)
-let arNumbers = [2,3,4,5];
-function arrNumbers (numbers)
-{
-let newNumbers = [];
-for(let number of arNumbers)
-{
-  let Numbers = doublesIt(number);
-  newNumbers.push(Numbers);
+let arNumbers = [2, 3, 4, 5];
+function arrNumbers(numbers) {
+  let newNumbers = [];
+  for (let number of arNumbers) {
+    let Numbers = doublesIt(number);
+    newNumbers.push(Numbers);
+  }
+  return newNumbers;
 }
-return newNumbers;
-}
-let doublesIt = num => num * 2;
+let doublesIt = (num) => num * 2;
 let makeDouble = arNumbers.map(doublesIt);
 let multiNumbers = arrNumbers(arNumbers);
 //console.log(multiNumbers);
@@ -185,89 +180,89 @@ let multiNumbers = arrNumbers(arNumbers);
   return number * 2;
 } */
 //--------------------map use in array----------------
-let fiveTimes = [2, 4, 6, 8].map(x => x * 5);
+let fiveTimes = [2, 4, 6, 8].map((x) => x * 5);
 console.log(fiveTimes);
 //use map array element divide by 2 then result
-let arraNumbers = [2,4,6,7];
-let divideByTwo = arraNumbers.map(n => n /2);
+let arraNumbers = [2, 4, 6, 7];
+let divideByTwo = arraNumbers.map((n) => n / 2);
 console.log(divideByTwo);
 //----------use map and get first character in array element--------
-let boys = ['opu','tipu', 'rony','sazzed'];
-let firstLetter = boys.map(boy => boy[0]);
+let boys = ["opu", "tipu", "rony", "sazzed"];
+let firstLetter = boys.map((boy) => boy[0]);
 console.log(firstLetter);
 //---------------array length using map----------------
-let baloks = ['opu','tipu', 'rony','sazzed'];
-let boyLength = baloks.map(balok => balok.length);
+let baloks = ["opu", "tipu", "rony", "sazzed"];
+let boyLength = baloks.map((balok) => balok.length);
 console.log(boyLength);
 //find specific name from product list
 let products = [
-  {id : 1, name : 'laptop', price : 12780},
-  {id : 2, name : 'mobile', price : 33400},
-  {id : 3, name : 'radio', price : 14000},
-  {id : 4, name : 'Walton', price : 16000}
+  { id: 1, name: "laptop", price: 12780 },
+  { id: 2, name: "mobile", price: 33400 },
+  { id: 3, name: "radio", price: 14000 },
+  { id: 4, name: "Walton", price: 16000 },
 ];
-let items = products.map(product => product.name);
+let items = products.map((product) => product.name);
 console.log(items);
 //-------use foreach(no return-thats why no variable)------------
-let balikas = ['opu','tipus', 'rony','sazzed'];
-balikas.forEach(balika => console.log(balika));
+let balikas = ["opu", "tipus", "rony", "sazzed"];
+balikas.forEach((balika) => console.log(balika));
 let prods = [
-  {id : 1, name : 'laptop', price : 12780},
-  {id : 2, name : 'mobiles', price : 33400},
-  {id : 3, name : 'radio', price : 14000},
-  {id : 4, name : 'Walton', price : 16000}
+  { id: 1, name: "laptop", price: 12780 },
+  { id: 2, name: "mobiles", price: 33400 },
+  { id: 3, name: "radio", price: 14000 },
+  { id: 4, name: "Walton", price: 16000 },
 ];
-prods.forEach(prod => console.log(prod));
+prods.forEach((prod) => console.log(prod));
 
 //--------------------------use filter for condition--------
-let filterNumbs = [10,20,30,40];
-let takeBig = filterNumbs.filter(num => num >20);
+let filterNumbs = [10, 20, 30, 40];
+let takeBig = filterNumbs.filter((num) => num > 20);
 console.log(takeBig);
 
 //-------------use filter take even number from array----------
-let filtNumber = [10,30,45,56,67];
-let evenNumber = filtNumber.filter(enumber =>enumber % 2 == 0);
+let filtNumber = [10, 30, 45, 56, 67];
+let evenNumber = filtNumber.filter((enumber) => enumber % 2 == 0);
 console.log(evenNumber);
 //-------------use filter take condition match product from array------
 let pro = [
-  {id : 1, name : 'laptop', price : 12780},
-  {id : 2, name : 'mobiles', price : 33400},
-  {id : 3, name : 'radio', price : 14000},
-  {id : 4, name : 'Walton', price : 16000}
+  { id: 1, name: "laptop", price: 12780 },
+  { id: 2, name: "mobiles", price: 33400 },
+  { id: 3, name: "radio", price: 14000 },
+  { id: 4, name: "Walton", price: 16000 },
 ];
-let matchProd = pro.filter(prod => prod.price > 20000);
+let matchProd = pro.filter((prod) => prod.price > 20000);
 console.log(matchProd);
 
 //-------------use (find) return only matching first value----------
-let findNumbers = [12,16,15,20,34,25];
-let findNum = findNumbers.find(num => num % 5 == 0);
+let findNumbers = [12, 16, 15, 20, 34, 25];
+let findNum = findNumbers.find((num) => num % 5 == 0);
 console.log(findNum);
 //output : 15.
 
 //-----------------use (reduce) structure:(accumulator function, initial value) again accumulator function has two parameter----------------
-let reduNumber = [1,2,3,4,5];
+let reduNumber = [1, 2, 3, 4, 5];
 let total = reduNumber.reduce((previous, current) => previous + current, 0);
 console.log(total);
 
 //--------------use .notation see specific value-------------------
 let student = {
-  name : 'opu',
-  age  : 23,
-  class : 'ten',
-  marks :{
-    bangla : 490,
-    math : 56,
-    english : 20
+  name: "opu",
+  age: 23,
+  class: "ten",
+  marks: {
+    bangla: 490,
+    math: 56,
+    english: 20,
   },
-}; 
+};
 let singleMark = student.marks.math;
 console.log(singleMark);
 
 //use---[]-----for specific value----------
-let english = student ['marks']['english'];
+let english = student["marks"]["english"];
 console.log(english);
 //property name assign a variable
-let subjectName = 'bangla';
+let subjectName = "bangla";
 let subjectMark = student.marks[subjectName];
 console.log(subjectMark);
 
@@ -304,127 +299,119 @@ console.log(dipu); */
 //------------class---------
 //---------------------COMMON CLASS-----------
 //parent
-class TeamMember{
+class TeamMember {
   name;
   address;
-  constructor(name, address)
-  {
+  constructor(name, address) {
     this.name = name;
     this.address = address;
   }
-  provideFeedback()
-  {
+  provideFeedback() {
     console.log(`${this.name} thank you for your feedback`);
   }
 }
 //(extends) use korle common class er property gula access pabe but name pabe na
-class Instructor extends TeamMember{
-  
+class Instructor extends TeamMember {
   //name set korar jonno constructor dite hoi-eta keyword
-  
-  constructor(name, address)
-  {
-    super(name, address) //parent er constructor k call krte super dite hoi
+
+  constructor(name, address) {
+    super(name, address); //parent er constructor k call krte super dite hoi
   }
-  designation = 'web course instructor';
-  team = 'web team';
+  designation = "web course instructor";
+  team = "web team";
   //method
-  startSupportSession(time)
-  {
+  startSupportSession(time) {
     console.log(`start support session at ${time}`);
   }
   //method
-  creatQuiz(module)
-  {
+  creatQuiz(module) {
     console.log(`please create quiz for module ${module}`);
   }
-  provideFeedback()
-  {
+  provideFeedback() {
     console.log(`${this.name} thank you for your feedback`);
   }
 }
 
-
-class Developer extends TeamMember{
-  
+class Developer extends TeamMember {
   tech;
   //name set korar jonno constructor dite hoi-eta keyword
-  constructor(name, address, tech)
-  {
+  constructor(name, address, tech) {
     super(name, address);
     this.tech = tech;
   }
-  designation = 'web course instructor';
-  team = 'web team';
+  designation = "web course instructor";
+  team = "web team";
   //method
-  developFeature(feature)
-  {
+  developFeature(feature) {
     console.log(`please develop ${feature}`);
   }
   //method
-  release(version)
-  {
+  release(version) {
     console.log(`please create quiz for module ${version}`);
   }
-  
 }
-const alia = new Developer('alia','india','react');
+const alia = new Developer("alia", "india", "react");
 alia.provideFeedback();
 console.log(alia);
 
-class Jobplacement extends TeamMember{
-  designation = 'job placement commanos';
-  team = 'job placement';
+class Jobplacement extends TeamMember {
+  designation = "job placement commanos";
+  team = "job placement";
   region;
   //name set korar jonno constructor dite hoi-eta keyword
-  constructor(name, address, region)
-  {
+  constructor(name, address, region) {
     super(name, address);
     this.region = region;
   }
-  
+
   //method
-  provideResume(feature)
-  {
+  provideResume(feature) {
     console.log(`please develop ${feature}`);
   }
   //method
-  prepareStudent(version)
-  {
+  prepareStudent(version) {
     console.log(`please create quiz for module ${version}`);
   }
- 
 }
-const popy = new Jobplacement('popy', 'dhaka', 'australlia');
+const popy = new Jobplacement("popy", "dhaka", "australlia");
 popy.provideFeedback();
 console.log(popy);
 //-------------
 //--------------milestone-6-module-32-start( Intro to JSON, JSON Structure, parse, stringify)
-let user = {id : 1, name : 'opu', class : 'hons', age : 23 };
+let user = { id: 1, name: "opu", class: "hons", age: 23 };
 let stringified = JSON.stringify(user);
 console.log(stringified);
 //-------------STRUCTURE 0F (FETCH)--------------
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 //--------------fetch-using- function------------
-function loadData()
-{
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(res => res.json())
-  .then(data => console.log(data))
+function loadData() {
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((res) => res.json())
+    .then((data) => console.log(data));
 }
 //----------another fetch example with json------
-function loadUsers()
-{
-  fetch('https://jsonplaceholder.typicode.com/users')
-  .then(res => res.json())
-  .then(data =>displayUsers(data))
+function loadUsers() {
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((res) => res.json())
+    .then((data) => displayUsers(data));
 }
-function displayUsers(userData)
-{
-console.log(userData);
+function displayUsers(userData) {
+  console.log(userData);
 }
+//------------continue feth example------------
+/* fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
+.then(data =>loadUser2(data)) */
 
-
-
+function loadUser2() {
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((res) => res.json())
+    .then((data) => displayUser2(data));
+}
+function displayUser2(userData)
+{
+  for(let user of userData)
+console.log(user.name);
+}
