@@ -414,6 +414,17 @@ function loadData()
   .then(res => res.json())
   .then(data => console.log(data))
 }
+//----------another fetch example with json------
+function loadUsers()
+{
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(res => res.json())
+  .then(data =>displayUsers(data))
+}
+function displayUsers(userData)
+{
+console.log(userData);
+}
 
 
 
