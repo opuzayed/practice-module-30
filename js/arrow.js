@@ -398,6 +398,11 @@ class Jobplacement extends TeamMember{
 const popy = new Jobplacement('popy', 'dhaka', 'australlia');
 popy.provideFeedback();
 console.log(popy);
+//-------------
+//--------------milestone-6-module-32-start( Intro to JSON, JSON Structure, parse, stringify)
+let user = {id : 1, name : 'opu', class : 'hons', age : 23 };
+let stringified = JSON.stringify(user);
+console.log(stringified);
 
 
 
