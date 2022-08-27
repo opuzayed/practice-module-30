@@ -405,7 +405,7 @@ function displayUsers(userData) {
 .then(res => res.json())
 .then(data =>loadUser2(data)) */
 
-function loadUser2() {
+/* function loadUser2() {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((res) => res.json())
     .then((data) => displayUser2(data));
@@ -420,3 +420,29 @@ function displayUser2(userData)
   ol.appendChild(li);
  }
 }
+ */
+//------------------using-fetch-create new div and set inner html in for of loop--------------
+function loadPost()
+{
+  fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(res => res.json())
+  .then(data => displayPost(data))
+}
+function displayPost(dataPost)
+{
+  let postContainer = document.getElementById('post-container');
+  for(let post of dataPost)
+  {
+    console.log(post);
+    let postDiv = document.createElement('div');
+
+    postDiv.innerHTML = `
+    <h3>User - ${post.userId}</h3>
+    <h5>Title : ${post.title} </h5>
+    <p>Post Description : </p>
+    `;
+    postContainer.appendChild(postDiv);
+    postDiv.classList.add('post');
+  }
+}
+loadPost();
