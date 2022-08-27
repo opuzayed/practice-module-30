@@ -412,6 +412,11 @@ function loadUser2() {
 }
 function displayUser2(userData)
 {
-  for(let user of userData)
-console.log(user.name);
+ let ol = document.getElementById('users-list');
+ for(let user of userData)
+ {
+  let li = document.createElement('li');
+  li.innerText = user.name;
+  ol.appendChild(li);
+ }
 }
