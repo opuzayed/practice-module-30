@@ -172,7 +172,7 @@ function arrNumbers(numbers) {
 let doublesIt = (num) => num * 2;
 let makeDouble = arNumbers.map(doublesIt);
 let multiNumbers = arrNumbers(arNumbers);
- *///console.log(multiNumbers);
+ */ //console.log(multiNumbers);
 //console.log(makeDouble);
 
 /* function multiflyByTwo(number)
@@ -214,7 +214,7 @@ let prods = [
 ];
 prods.forEach((prod) => console.log(prod));
 
- *///--------------------------use filter for condition--------
+ */ //--------------------------use filter for condition--------
 /* let filterNumbs = [10, 20, 30, 40];
 let takeBig = filterNumbs.filter((num) => num > 20);
 console.log(takeBig);
@@ -312,15 +312,15 @@ console.log(dipu); */
 } */
 //(extends) use korle common class er property gula access pabe but name pabe na
 //class Instructor extends TeamMember {
-  //name set korar jonno constructor dite hoi-eta keyword
+//name set korar jonno constructor dite hoi-eta keyword
 
-  /* constructor(name, address) {
+/* constructor(name, address) {
     super(name, address); //parent er constructor k call krte super dite hoi
   }
   designation = "web course instructor";
   team = "web team"; */
-  //method
-  /* startSupportSession(time) {
+//method
+/* startSupportSession(time) {
     console.log(`start support session at ${time}`);
   }
   //method
@@ -364,8 +364,8 @@ class Jobplacement extends TeamMember {
     this.region = region;
   }
  */
-  //method
- /*  provideResume(feature) {
+//method
+/*  provideResume(feature) {
     console.log(`please develop ${feature}`);
   }
   //method
@@ -463,7 +463,7 @@ const displayQuote = data => {
   blockQuote.innerText = data.quote;
 } */
 //-----------M-33-----------FETCH ANOTHER EXAMPLE-----------
-const loadUsers = () =>
+/* const loadUsers = () =>
 {
 fetch('https://randomuser.me/api/?results=10')
 .then(res => res.json()) 
@@ -486,4 +486,59 @@ const displayUsers = users =>{
  }
   
 }
-loadUsers();
+loadUsers(); */
+//-----------another-video-fetch-example-by-foreach-------
+/* const loadCountries = () =>
+{
+  fetch('https://restcountries.com/v3.1/all')
+  .then(res => res.json())
+  .then(data => displayCountry(data))
+}
+const displayCountry = countries =>
+{ */
+/* for(const country of countries)
+  {
+    console.log(country);
+  } or use for each*/
+
+//foreach kaj kore array er upore
+/* countries.forEach(country =>{
+    console.log(country);
+  })
+} */
+//loadCountries();
+//meal - container;
+//-------------------module-33-----mileston-6-fetch-exzample--------
+const loadMeals = (search) => {
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayMeals(data.meals));
+};
+const displayMeals = (meals) => {
+  const mealContainer = document.getElementById("meal-container");
+  mealContainer.innerText = '';
+  meals.forEach(meal => {
+    console.log(meal);
+    const mealDiv = document.createElement("div");
+    mealDiv.classList.add("col");
+    mealDiv.innerHTML = `
+    <div class="card h-100">
+    <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${meal.strMeal}</h5>
+      <p class="card-text">${meal.strInstructions.slice(0, 200)}</p>
+    </div>
+  </div>
+   `;
+    mealContainer.appendChild(mealDiv);
+  })
+};
+const searchFood = () =>{
+  const searchField = document.getElementById('search-field');
+  const searchText = searchField.value;
+  loadMeals(searchText);
+  searchField.value = '';
+  
+}
+//loadMeals('burger');
