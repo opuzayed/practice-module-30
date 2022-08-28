@@ -1,4 +1,4 @@
-const add = (num1, num2) => num1 + num2;
+/* const add = (num1, num2) => num1 + num2;
 //const result = add(2, 4);
 //console.log(result);
 const getFullName = (first, last) => first + " " + last;
@@ -72,19 +72,19 @@ const bigNumber = Math.max(...numberss);
 // milestone -6-module-30-practice-problem
 /*Write an arrow function that will take 3 parameters, will multiply
 the parameters and will return the result. */
-let multifly = (a, b, c) => a * b * c;
-let results = multifly(2, 2, 2);
+//let multifly = (a, b, c) => a * b * c;
+//let results = multifly(2, 2, 2);
 //console.log(results);
 
 //---multiline-use-backtick(`)
-let rsult = `i am web developer.
+/* let rsult = `i am web developer.
 i love to code.
 i love to eat biriyani.
-`;
+`; */
 //console.log(rsult);
 //------------arrowfunction using default parameter
-let adds = (a, b = 0) => a + b;
-let rasult = adds(3);
+/* let adds = (a, b = 0) => a + b;
+let rasult = adds(3); */
 //console.log(rasult);
 /* Write an arrow function where it will do the following:
  
@@ -147,7 +147,7 @@ let allresult = takeArray(array1,array2);
 console.log(allresult); */
 
 //-----------milestone-6-module-31- start------------
-let users = [{ name: "abul", id: 1, job: "developer" }];
+/* let users = [{ name: "abul", id: 1, job: "developer" }];
 console.log(users[0].id);
 //another----
 let data = {
@@ -156,11 +156,11 @@ let data = {
     { id: 1, name: "mofiz", job: "programmer" },
     { id: 2, name: "opu", job: "developer" },
   ],
-};
+}; */
 //console.log(data . data[1].name);
 
 //?-optional-chaining(kono value te data na thakle ? use korle shta r samne jabe na)
-let arNumbers = [2, 3, 4, 5];
+/* let arNumbers = [2, 3, 4, 5];
 function arrNumbers(numbers) {
   let newNumbers = [];
   for (let number of arNumbers) {
@@ -172,7 +172,7 @@ function arrNumbers(numbers) {
 let doublesIt = (num) => num * 2;
 let makeDouble = arNumbers.map(doublesIt);
 let multiNumbers = arrNumbers(arNumbers);
-//console.log(multiNumbers);
+ *///console.log(multiNumbers);
 //console.log(makeDouble);
 
 /* function multiflyByTwo(number)
@@ -180,7 +180,7 @@ let multiNumbers = arrNumbers(arNumbers);
   return number * 2;
 } */
 //--------------------map use in array----------------
-let fiveTimes = [2, 4, 6, 8].map((x) => x * 5);
+/* let fiveTimes = [2, 4, 6, 8].map((x) => x * 5);
 console.log(fiveTimes);
 //use map array element divide by 2 then result
 let arraNumbers = [2, 4, 6, 7];
@@ -193,9 +193,9 @@ console.log(firstLetter);
 //---------------array length using map----------------
 let baloks = ["opu", "tipu", "rony", "sazzed"];
 let boyLength = baloks.map((balok) => balok.length);
-console.log(boyLength);
+console.log(boyLength); */
 //find specific name from product list
-let products = [
+/* let products = [
   { id: 1, name: "laptop", price: 12780 },
   { id: 2, name: "mobile", price: 33400 },
   { id: 3, name: "radio", price: 14000 },
@@ -214,38 +214,38 @@ let prods = [
 ];
 prods.forEach((prod) => console.log(prod));
 
-//--------------------------use filter for condition--------
-let filterNumbs = [10, 20, 30, 40];
+ *///--------------------------use filter for condition--------
+/* let filterNumbs = [10, 20, 30, 40];
 let takeBig = filterNumbs.filter((num) => num > 20);
 console.log(takeBig);
-
+ */
 //-------------use filter take even number from array----------
-let filtNumber = [10, 30, 45, 56, 67];
+/* let filtNumber = [10, 30, 45, 56, 67];
 let evenNumber = filtNumber.filter((enumber) => enumber % 2 == 0);
-console.log(evenNumber);
+console.log(evenNumber); */
 //-------------use filter take condition match product from array------
-let pro = [
+/* let pro = [
   { id: 1, name: "laptop", price: 12780 },
   { id: 2, name: "mobiles", price: 33400 },
   { id: 3, name: "radio", price: 14000 },
   { id: 4, name: "Walton", price: 16000 },
 ];
 let matchProd = pro.filter((prod) => prod.price > 20000);
-console.log(matchProd);
+console.log(matchProd); */
 
 //-------------use (find) return only matching first value----------
-let findNumbers = [12, 16, 15, 20, 34, 25];
+/* let findNumbers = [12, 16, 15, 20, 34, 25];
 let findNum = findNumbers.find((num) => num % 5 == 0);
-console.log(findNum);
+console.log(findNum); */
 //output : 15.
 
 //-----------------use (reduce) structure:(accumulator function, initial value) again accumulator function has two parameter----------------
-let reduNumber = [1, 2, 3, 4, 5];
+/* let reduNumber = [1, 2, 3, 4, 5];
 let total = reduNumber.reduce((previous, current) => previous + current, 0);
-console.log(total);
+console.log(total); */
 
 //--------------use .notation see specific value-------------------
-let student = {
+/* let student = {
   name: "opu",
   age: 23,
   class: "ten",
@@ -257,14 +257,14 @@ let student = {
 };
 let singleMark = student.marks.math;
 console.log(singleMark);
-
+ */
 //use---[]-----for specific value----------
-let english = student["marks"]["english"];
+/* let english = student["marks"]["english"];
 console.log(english);
 //property name assign a variable
 let subjectName = "bangla";
 let subjectMark = student.marks[subjectName];
-console.log(subjectMark);
+console.log(subjectMark); */
 
 //--------------class--------------
 /* class Instructor{
@@ -299,7 +299,7 @@ console.log(dipu); */
 //------------class---------
 //---------------------COMMON CLASS-----------
 //parent
-class TeamMember {
+/* class TeamMember {
   name;
   address;
   constructor(name, address) {
@@ -309,18 +309,18 @@ class TeamMember {
   provideFeedback() {
     console.log(`${this.name} thank you for your feedback`);
   }
-}
+} */
 //(extends) use korle common class er property gula access pabe but name pabe na
-class Instructor extends TeamMember {
+//class Instructor extends TeamMember {
   //name set korar jonno constructor dite hoi-eta keyword
 
-  constructor(name, address) {
+  /* constructor(name, address) {
     super(name, address); //parent er constructor k call krte super dite hoi
   }
   designation = "web course instructor";
-  team = "web team";
+  team = "web team"; */
   //method
-  startSupportSession(time) {
+  /* startSupportSession(time) {
     console.log(`start support session at ${time}`);
   }
   //method
@@ -330,9 +330,9 @@ class Instructor extends TeamMember {
   provideFeedback() {
     console.log(`${this.name} thank you for your feedback`);
   }
-}
+} */
 
-class Developer extends TeamMember {
+/* class Developer extends TeamMember {
   tech;
   //name set korar jonno constructor dite hoi-eta keyword
   constructor(name, address, tech) {
@@ -363,9 +363,9 @@ class Jobplacement extends TeamMember {
     super(name, address);
     this.region = region;
   }
-
+ */
   //method
-  provideResume(feature) {
+ /*  provideResume(feature) {
     console.log(`please develop ${feature}`);
   }
   //method
@@ -390,16 +390,16 @@ function loadData() {
   fetch("https://jsonplaceholder.typicode.com/todos/1")
     .then((res) => res.json())
     .then((data) => console.log(data));
-}
+} */
 //----------another fetch example with json------
-function loadUsers() {
+/* function loadUsers() {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((res) => res.json())
     .then((data) => displayUsers(data));
 }
 function displayUsers(userData) {
   console.log(userData);
-}
+}  */
 //------------continue feth example------------
 /* fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
@@ -422,7 +422,7 @@ function displayUser2(userData)
 }
  */
 //------------------using-fetch-create new div and set inner html in for of loop--------------
-function loadPost()
+/* function loadPost()
 {
   fetch('https://jsonplaceholder.typicode.com/posts')
   .then(res => res.json())
@@ -445,4 +445,20 @@ function displayPost(dataPost)
     postDiv.classList.add('post');
   }
 }
-loadPost();
+loadPost(); */
+//
+/* const stuInfo = JSON.stringify({ name: "James", roll: 3 }); 
+console.log(stuInfo.name); */
+
+//-----------module--33-----start-----------------
+
+const loadQuote = () => {
+  fetch('https://api.kanye.rest/')
+  .then(res => res.json())
+  .then(data => displayQuote(data))
+}
+//loadQuote();
+const displayQuote = data => {
+  const blockQuote = document.getElementById('quotes');
+  blockQuote.innerText = data.quote;
+}
