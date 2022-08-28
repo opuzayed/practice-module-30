@@ -452,7 +452,7 @@ console.log(stuInfo.name); */
 
 //-----------module--33-----start-----------------
 
-const loadQuote = () => {
+/* const loadQuote = () => {
   fetch('https://api.kanye.rest/')
   .then(res => res.json())
   .then(data => displayQuote(data))
@@ -461,4 +461,29 @@ const loadQuote = () => {
 const displayQuote = data => {
   const blockQuote = document.getElementById('quotes');
   blockQuote.innerText = data.quote;
+} */
+//-----------M-33-----------FETCH ANOTHER EXAMPLE-----------
+const loadUsers = () =>
+{
+fetch('https://randomuser.me/api/?results=10')
+.then(res => res.json()) 
+.then(data => displayUsers(data.results))
 }
+const displayUsers = users =>{
+ const userContainer = document.getElementById('users-container');
+ for(const user of users)
+ {
+  console.log(user);
+  const userDiv = document.createElement('div');
+  userDiv.classList.add('user');
+  userDiv.innerHTML = `
+  <h3>user name : </h3>
+  <p>Email: ${user.email}</p>
+  <p>location: ${user.location.city} ${user.location.country}</p>
+  `
+  userContainer.appendChild(userDiv);
+
+ }
+  
+}
+loadUsers();
