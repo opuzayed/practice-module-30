@@ -509,7 +509,7 @@ const displayCountry = countries =>
 //loadCountries();
 //meal - container;
 //-------------------module-33-----mileston-6-fetch-exzample--------
-const loadMeals = (search) => {
+/* const loadMeals = (search) => {
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
   fetch(url)
     .then((res) => res.json())
@@ -539,10 +539,10 @@ const searchFood = () => {
   const searchText = searchField.value;
   loadMeals(searchText);
   searchField.value = "";
-};
+}; */
 //--------------------- Create dynamic url based on click and display data-------
 
-const loadMealDetail = (idMeal) => {
+/* const loadMealDetail = (idMeal) => {
   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
   fetch(url)
     .then((res) => res.json())
@@ -563,3 +563,32 @@ const displayMealDetail = (meal) => {
   `;
   detailContainer.appendChild(mealDiv);
 };
+ */
+//----------fetch------------
+const loadUserFetch = () => {
+  const url = `https://randomuser.me/api/?gender=female`;
+  fetch(url)
+  .then(res => res.json())
+  .then(data => displayUser(data.results[0]))
+  .catch(error => console.log(error))
+}
+const loadUserAsync = async() =>
+{
+  const url =  `https://randomuser.me/api/?gender=female`;
+  try
+  {
+    const res = await fetch(url);
+    const data = await res.json();
+    displayUser(data.results[0]);
+  }
+  catch(error)
+  {
+  console.log(error);
+  }
+  
+}
+
+const displayUser = user =>{
+  console.log(user);
+}
+//---parameter er age (async) dite hoi--------
